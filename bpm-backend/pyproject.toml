@@ -1,0 +1,26 @@
+[project]
+name = "bpm-backend"
+version = "0.1.0"
+description = "BPM FastAPI Backend"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.112",
+  "uvicorn[standard]>=0.30",
+  "pydantic[email]>=2.6",
+  "pydantic-settings>=2.0",
+  "SQLAlchemy>=2.0",
+  "psycopg2-binary>=2.9",
+  "python-jose[cryptography]>=3.3",
+  "passlib[bcrypt]>=1.7",
+  "python-multipart",
+  "alembic>=1.13"
+]
+
+#[tool.scripts]
+#start ="uvicorn app.main:app --reload --host 0.0.0.0 --port 8000" # script para iniciar o servidor
+
+[project.scripts]
+start-bpm = "app.cli:start_server"
+
+[tool.setuptools]
+packages = ["app"]

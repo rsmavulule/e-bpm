@@ -1,0 +1,100 @@
+# Arquivos de ambiente - NUNCA versionar este arquivo!
+.env
+.env.*
+!.env.example
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Geralmente esses arquivos são escritos por um script PyInstaller;
+#  isto é apenas para o caso de você executá-lo manualmente.
+*.spec
+
+# Logs de instalação
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Relatórios de teste de unidade / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+.hypothesis/
+
+# Traduções
+*.mo
+*.pot
+
+# Coisas do Django:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Coisas do Flask:
+instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Ambientes virtuais
+.venv
+venv/
+env/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype
+.pytype/
+
+# Configurações de IDE
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos gerados pelo SO
+.DS_Store
+Thumbs.db
